@@ -1,0 +1,238 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Naos.MessageBus.DataContract</name>
+    </assembly>
+    <members>
+        <member name="T:Naos.MessageBus.DataContract.Channel">
+            <summary>
+            Class representing a channel to send a message on.
+            </summary>
+        </member>
+        <member name="P:Naos.MessageBus.DataContract.Channel.Name">
+            <summary>
+            Gets or sets the name of the channel.
+            </summary>
+        </member>
+        <member name="T:Naos.MessageBus.DataContract.ChanneledMessage">
+            <summary>
+            Message with channel.
+            </summary>
+        </member>
+        <member name="P:Naos.MessageBus.DataContract.ChanneledMessage.Message">
+            <summary>
+            Gets or sets the message.
+            </summary>
+        </member>
+        <member name="P:Naos.MessageBus.DataContract.ChanneledMessage.Channel">
+            <summary>
+            Gets or sets the channel to broadcast the message on.
+            </summary>
+        </member>
+        <member name="T:Naos.MessageBus.DataContract.Envelope">
+            <summary>
+            Container object to use when re-hydrating a message.
+            </summary>
+        </member>
+        <member name="P:Naos.MessageBus.DataContract.Envelope.Description">
+            <summary>
+            Gets or sets the description of the message in the envelope.
+            </summary>
+        </member>
+        <member name="P:Naos.MessageBus.DataContract.Envelope.MessageTypeNamespace">
+            <summary>
+            Gets or sets the namespace of the type of the message.
+            </summary>
+        </member>
+        <member name="P:Naos.MessageBus.DataContract.Envelope.MessageTypeName">
+            <summary>
+            Gets or sets the name of the type of the message.
+            </summary>
+        </member>
+        <member name="P:Naos.MessageBus.DataContract.Envelope.MessageTypeAssemblyQualifiedName">
+            <summary>
+            Gets or sets the qualified name of the assembly of the type of the message.
+            </summary>
+        </member>
+        <member name="P:Naos.MessageBus.DataContract.Envelope.MessageAsJson">
+            <summary>
+            Gets or sets the message in JSON format.
+            </summary>
+        </member>
+        <member name="P:Naos.MessageBus.DataContract.Envelope.Channel">
+            <summary>
+            Gets or sets the channel the message should be broadcasted on.
+            </summary>
+        </member>
+        <member name="T:Naos.MessageBus.DataContract.Exceptions.DispatchException">
+            <summary>
+            Custom exception for failure to dispatch.
+            </summary>
+        </member>
+        <member name="M:Naos.MessageBus.DataContract.Exceptions.DispatchException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Naos.MessageBus.DataContract.Exceptions.DispatchException"/> class.
+            </summary>
+            <param name="message">Exception message.</param>
+        </member>
+        <member name="M:Naos.MessageBus.DataContract.Exceptions.DispatchException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Naos.MessageBus.DataContract.Exceptions.DispatchException"/> class.
+            </summary>
+            <param name="message">Exception message.</param>
+            <param name="innerException">Inner exception.</param>
+        </member>
+        <member name="T:Naos.MessageBus.DataContract.Exceptions.HarnessStartupException">
+            <summary>
+            Custom exception for failures in harness startup.
+            </summary>
+        </member>
+        <member name="M:Naos.MessageBus.DataContract.Exceptions.HarnessStartupException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Naos.MessageBus.DataContract.Exceptions.HarnessStartupException"/> class.
+            </summary>
+            <param name="message">Exception message.</param>
+        </member>
+        <member name="M:Naos.MessageBus.DataContract.Exceptions.HarnessStartupException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Naos.MessageBus.DataContract.Exceptions.HarnessStartupException"/> class.
+            </summary>
+            <param name="message">Exception message.</param>
+            <param name="innerException">Inner exception.</param>
+        </member>
+        <member name="T:Naos.MessageBus.DataContract.Exceptions.SharePropertyException">
+            <summary>
+            Custom exception for failures in sharing properties.
+            </summary>
+        </member>
+        <member name="M:Naos.MessageBus.DataContract.Exceptions.SharePropertyException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Naos.MessageBus.DataContract.Exceptions.SharePropertyException"/> class.
+            </summary>
+            <param name="message">Exception message.</param>
+        </member>
+        <member name="M:Naos.MessageBus.DataContract.Exceptions.SharePropertyException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Naos.MessageBus.DataContract.Exceptions.SharePropertyException"/> class.
+            </summary>
+            <param name="message">Exception message.</param>
+            <param name="innerException">Inner exception.</param>
+        </member>
+        <member name="T:Naos.MessageBus.DataContract.Exceptions.MessageBusExceptionBase">
+            <summary>
+            Base exception for all to derive from.
+            </summary>
+        </member>
+        <member name="M:Naos.MessageBus.DataContract.Exceptions.MessageBusExceptionBase.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Naos.MessageBus.DataContract.Exceptions.MessageBusExceptionBase"/> class.
+            </summary>
+            <param name="message">Exception message.</param>
+        </member>
+        <member name="M:Naos.MessageBus.DataContract.Exceptions.MessageBusExceptionBase.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Naos.MessageBus.DataContract.Exceptions.MessageBusExceptionBase"/> class.
+            </summary>
+            <param name="message">Exception message.</param>
+            <param name="innerException">Inner exception.</param>
+        </member>
+        <member name="T:Naos.MessageBus.DataContract.IShare">
+            <summary>
+            Interface for derivative implementations to allow passing properties from one object to another.
+            Used to share properties from a handler to a downstream message in a message sequence.
+            </summary>
+        </member>
+        <member name="T:Naos.MessageBus.DataContract.IMessage">
+            <summary>
+            Interface for all messages that run through the system.
+            </summary>
+        </member>
+        <member name="P:Naos.MessageBus.DataContract.IMessage.Description">
+            <summary>
+            Gets or sets the description of the message.
+            </summary>
+        </member>
+        <member name="M:Naos.MessageBus.DataContract.IMessage.ToString">
+            <summary>
+            Force a ToString override as this allows for much better error handling.
+            </summary>
+            <returns>String representation of the object.</returns>
+        </member>
+        <member name="T:Naos.MessageBus.DataContract.MessageSequence">
+            <summary>
+            Model object to hold an ordered set of messages to be executed serially on success (will abort the entire queue on failure).
+            </summary>
+        </member>
+        <member name="P:Naos.MessageBus.DataContract.MessageSequence.Id">
+            <summary>
+            Gets or sets the ID of the message sequence (important when you have multiple messages to collate).
+            </summary>
+        </member>
+        <member name="P:Naos.MessageBus.DataContract.MessageSequence.ChanneledMessages">
+            <summary>
+            Gets or sets the messages to run in order.
+            </summary>
+        </member>
+        <member name="T:Naos.MessageBus.DataContract.Parcel">
+            <summary>
+            Collection of envelopes to use as a unit.
+            </summary>
+        </member>
+        <member name="P:Naos.MessageBus.DataContract.Parcel.Id">
+            <summary>
+            Gets or sets the ID of the parcel (important when you have multiple envelopes to collate).
+            </summary>
+        </member>
+        <member name="P:Naos.MessageBus.DataContract.Parcel.Envelopes">
+            <summary>
+            Gets or sets a collection of envelopes to run in order.
+            </summary>
+        </member>
+        <member name="T:Naos.MessageBus.DataContract.NullMessage">
+            <summary>
+            Fake message that doesn't do anything.
+            </summary>
+        </member>
+        <member name="P:Naos.MessageBus.DataContract.NullMessage.Description">
+            <inheritdoc />
+        </member>
+        <member name="T:Naos.MessageBus.DataContract.TrackingCode">
+            <summary>
+            Result of sending a message with information to lookup status.
+            </summary>
+        </member>
+        <member name="P:Naos.MessageBus.DataContract.TrackingCode.Code">
+            <summary>
+            Gets or sets the code for tracking the message.
+            </summary>
+        </member>
+        <member name="T:Naos.MessageBus.DataContract.TypeMap">
+            <summary>
+            Model object to use for mapping a type.
+            </summary>
+        </member>
+        <member name="P:Naos.MessageBus.DataContract.TypeMap.InterfaceType">
+            <summary>
+            Gets or sets the interface type.
+            </summary>
+        </member>
+        <member name="P:Naos.MessageBus.DataContract.TypeMap.ConcreteType">
+            <summary>
+            Gets or sets the concrete type.
+            </summary>
+        </member>
+        <member name="T:Naos.MessageBus.DataContract.TypeMapExtensionMethods">
+            <summary>
+            Utility class to find type matches in files.
+            </summary>
+        </member>
+        <member name="M:Naos.MessageBus.DataContract.TypeMapExtensionMethods.GetTypeMapsOfImplementersOfGenericType(System.Collections.Generic.ICollection{System.Type},System.Type)">
+            <summary>
+            Gets a list of type maps of the implementers of the specified type from the provided list of types.
+            </summary>
+            <param name="sourceTypes">Types to build map from.</param>
+            <param name="genericTypeToMatch">Generic type to filter on.</param>
+            <returns>Type map of interface to concrete type.</returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,126 @@
+Q:\IDE + projects\C# projects\WorkerSurveillance\WorkerSurveillance\bin\Debug\WorkerSurveillance.exe.config
+Q:\IDE + projects\C# projects\WorkerSurveillance\WorkerSurveillance\obj\Debug\WorkerSurveillance.csprojResolveAssemblyReference.cache
+Q:\IDE + projects\C# projects\WorkerSurveillance\WorkerSurveillance\bin\Debug\WorkerSurveillance.exe
+Q:\IDE + projects\C# projects\WorkerSurveillance\WorkerSurveillance\bin\Debug\WorkerSurveillance.pdb
+Q:\IDE + projects\C# projects\WorkerSurveillance\WorkerSurveillance\obj\Debug\WorkerSurveillance.exe
+Q:\IDE + projects\C# projects\WorkerSurveillance\WorkerSurveillance\obj\Debug\WorkerSurveillance.pdb
+Q:\IDE + projects\C# projects\WorkerSurveillance\WorkerSurveillance\bin\Debug\System.Data.SQLite.dll
+Q:\IDE + projects\C# projects\WorkerSurveillance\WorkerSurveillance\bin\Debug\System.Data.SQLite.xml
+D:\C# projects\WorkerSurveillance\WorkerSurveillance\bin\Debug\WorkerSurveillance.exe.config
+D:\C# projects\WorkerSurveillance\WorkerSurveillance\obj\Debug\WorkerSurveillance.exe
+D:\C# projects\WorkerSurveillance\WorkerSurveillance\obj\Debug\WorkerSurveillance.pdb
+D:\C# projects\WorkerSurveillance\WorkerSurveillance\bin\Debug\WorkerSurveillance.exe
+D:\C# projects\WorkerSurveillance\WorkerSurveillance\bin\Debug\WorkerSurveillance.pdb
+D:\C# projects\WorkerSurveillance\WorkerSurveillance\bin\Debug\System.Data.SQLite.xml
+D:\C# projects\WorkerSurveillance\WorkerSurveillance\obj\Debug\WorkerSurveillance.csprojResolveAssemblyReference.cache
+D:\Workspace\C#\WorkerSurveillance\WorkerSurveillance\bin\Debug\WorkerSurveillance.exe.config
+D:\Workspace\C#\WorkerSurveillance\WorkerSurveillance\obj\Debug\WorkerSurveillance.exe
+D:\Workspace\C#\WorkerSurveillance\WorkerSurveillance\obj\Debug\WorkerSurveillance.pdb
+D:\Workspace\C#\WorkerSurveillance\WorkerSurveillance\bin\Debug\WorkerSurveillance.exe
+D:\Workspace\C#\WorkerSurveillance\WorkerSurveillance\bin\Debug\WorkerSurveillance.pdb
+D:\Workspace\C#\WorkerSurveillance\WorkerSurveillance\bin\Debug\System.Data.SQLite.xml
+D:\Workspace\C#\WorkerSurveillance\WorkerSurveillance\obj\Debug\WorkerSurveillance.csprojResolveAssemblyReference.cache
+D:\Work\C#\WorkerSurveillance\WorkerSurveillance\bin\Debug\WorkerSurveillance.exe.config
+D:\Work\C#\WorkerSurveillance\WorkerSurveillance\obj\Debug\WorkerSurveillance.exe
+D:\Work\C#\WorkerSurveillance\WorkerSurveillance\obj\Debug\WorkerSurveillance.pdb
+D:\Work\C#\WorkerSurveillance\WorkerSurveillance\bin\Debug\WorkerSurveillance.exe
+D:\Work\C#\WorkerSurveillance\WorkerSurveillance\bin\Debug\WorkerSurveillance.pdb
+D:\Work\C#\WorkerSurveillance\WorkerSurveillance\bin\Debug\System.Data.SQLite.xml
+D:\Work\C#\WorkerSurveillance\WorkerSurveillance\obj\Debug\WorkerSurveillance.csprojResolveAssemblyReference.cache
+C:\Users\Iancu\Desktop\C#\WorkerSurveillance\WorkerSurveillance\bin\Debug\WorkerSurveillance.exe.config
+C:\Users\Iancu\Desktop\C#\WorkerSurveillance\WorkerSurveillance\obj\Debug\WorkerSurveillance.exe
+C:\Users\Iancu\Desktop\C#\WorkerSurveillance\WorkerSurveillance\obj\Debug\WorkerSurveillance.pdb
+C:\Users\Iancu\Desktop\C#\WorkerSurveillance\WorkerSurveillance\bin\Debug\WorkerSurveillance.exe
+C:\Users\Iancu\Desktop\C#\WorkerSurveillance\WorkerSurveillance\bin\Debug\WorkerSurveillance.pdb
+C:\Users\Iancu\Desktop\C#\WorkerSurveillance\WorkerSurveillance\bin\Debug\System.Data.SQLite.xml
+C:\Users\Iancu\Desktop\C#\WorkerSurveillance\WorkerSurveillance\obj\Debug\WorkerSurveillance.csprojResolveAssemblyReference.cache
+Q:\IDE + projects\C# projects\SVN\WorkerSurveillance\WorkerSurveillance\bin\Debug\WorkerSurveillance.exe.config
+Q:\IDE + projects\C# projects\SVN\WorkerSurveillance\WorkerSurveillance\obj\Debug\WorkerSurveillance.exe
+Q:\IDE + projects\C# projects\SVN\WorkerSurveillance\WorkerSurveillance\obj\Debug\WorkerSurveillance.pdb
+Q:\IDE + projects\C# projects\SVN\WorkerSurveillance\WorkerSurveillance\bin\Debug\WorkerSurveillance.exe
+Q:\IDE + projects\C# projects\SVN\WorkerSurveillance\WorkerSurveillance\bin\Debug\WorkerSurveillance.pdb
+Q:\IDE + projects\C# projects\SVN\WorkerSurveillance\WorkerSurveillance\bin\Debug\System.Data.SQLite.dll
+Q:\IDE + projects\C# projects\SVN\WorkerSurveillance\WorkerSurveillance\bin\Debug\System.Data.SQLite.xml
+Q:\IDE + projects\C# projects\SVN\WorkerSurveillance\WorkerSurveillance\obj\Debug\WorkerSurveillance.csprojResolveAssemblyReference.cache
+C:\Users\Iancu\Desktop\C#\SVN\WorkerSurveillance\WorkerSurveillance\bin\Debug\WorkerSurveillance.exe.config
+C:\Users\Iancu\Desktop\C#\SVN\WorkerSurveillance\WorkerSurveillance\obj\Debug\WorkerSurveillance.exe
+C:\Users\Iancu\Desktop\C#\SVN\WorkerSurveillance\WorkerSurveillance\obj\Debug\WorkerSurveillance.pdb
+C:\Users\Iancu\Desktop\C#\SVN\WorkerSurveillance\WorkerSurveillance\bin\Debug\WorkerSurveillance.exe
+C:\Users\Iancu\Desktop\C#\SVN\WorkerSurveillance\WorkerSurveillance\bin\Debug\WorkerSurveillance.pdb
+C:\Users\Iancu\Desktop\C#\SVN\WorkerSurveillance\WorkerSurveillance\bin\Debug\System.Data.SQLite.xml
+C:\Users\Iancu\Desktop\C#\SVN\WorkerSurveillance\WorkerSurveillance\obj\Debug\WorkerSurveillance.csprojResolveAssemblyReference.cache
+D:\C# projects\svn\WorkerSurveillance\WorkerSurveillance\bin\Debug\WorkerSurveillance.exe.config
+D:\C# projects\svn\WorkerSurveillance\WorkerSurveillance\obj\Debug\WorkerSurveillance.exe
+D:\C# projects\svn\WorkerSurveillance\WorkerSurveillance\obj\Debug\WorkerSurveillance.pdb
+D:\C# projects\svn\WorkerSurveillance\WorkerSurveillance\bin\Debug\WorkerSurveillance.exe
+D:\C# projects\svn\WorkerSurveillance\WorkerSurveillance\bin\Debug\WorkerSurveillance.pdb
+D:\C# projects\svn\WorkerSurveillance\WorkerSurveillance\bin\Debug\System.Data.SQLite.xml
+D:\C# projects\svn\WorkerSurveillance\WorkerSurveillance\obj\Debug\WorkerSurveillance.csprojResolveAssemblyReference.cache
+C:\Users\Alex\Desktop\C#\svn\WorkerSurveillance\WorkerSurveillance\bin\Debug\WorkerSurveillance.exe.config
+C:\Users\Alex\Desktop\C#\svn\WorkerSurveillance\WorkerSurveillance\obj\Debug\WorkerSurveillance.exe
+C:\Users\Alex\Desktop\C#\svn\WorkerSurveillance\WorkerSurveillance\obj\Debug\WorkerSurveillance.pdb
+C:\Users\Alex\Desktop\C#\svn\WorkerSurveillance\WorkerSurveillance\bin\Debug\WorkerSurveillance.exe
+C:\Users\Alex\Desktop\C#\svn\WorkerSurveillance\WorkerSurveillance\bin\Debug\WorkerSurveillance.pdb
+C:\Users\Alex\Desktop\C#\svn\WorkerSurveillance\WorkerSurveillance\bin\Debug\System.Data.SQLite.xml
+C:\Users\Alex\Desktop\C#\svn\WorkerSurveillance\WorkerSurveillance\obj\Debug\WorkerSurveillance.csprojResolveAssemblyReference.cache
+C:\Users\Alex\Desktop\C#\svn\WorkerSurveillance\WorkerSurveillance\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Alex\Desktop\C#\svn\WorkerSurveillance\WorkerSurveillance\bin\Debug\Newtonsoft.Json.xml
+Q:\IDE + projects\C# projects\SVN\WorkerSurveillance\WorkerSurveillance\bin\Debug\Newtonsoft.Json.dll
+Q:\IDE + projects\C# projects\SVN\WorkerSurveillance\WorkerSurveillance\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Iancu\Desktop\C#\SVN\WorkerSurveillance\WorkerSurveillance\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Iancu\Desktop\C#\SVN\WorkerSurveillance\WorkerSurveillance\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Alex\Desktop\svn\WorkerSurveillance\WorkerSurveillance\bin\Debug\WorkerSurveillance.exe.config
+C:\Users\Alex\Desktop\svn\WorkerSurveillance\WorkerSurveillance\obj\Debug\WorkerSurveillance.exe
+C:\Users\Alex\Desktop\svn\WorkerSurveillance\WorkerSurveillance\obj\Debug\WorkerSurveillance.pdb
+C:\Users\Alex\Desktop\svn\WorkerSurveillance\WorkerSurveillance\obj\Debug\WorkerSurveillance.csprojResolveAssemblyReference.cache
+C:\Users\Alex\Desktop\svn\WorkerSurveillance\WorkerSurveillance\bin\Debug\WorkerSurveillance.exe
+C:\Users\Alex\Desktop\svn\WorkerSurveillance\WorkerSurveillance\bin\Debug\WorkerSurveillance.pdb
+C:\Users\Alex\Desktop\svn\WorkerSurveillance\WorkerSurveillance\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Alex\Desktop\svn\WorkerSurveillance\WorkerSurveillance\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Alex\Desktop\svn\WorkerSurveillance\WorkerSurveillance\bin\Debug\System.Data.SQLite.xml
+C:\Users\Alex\Desktop\WorkerSurveillance\WorkerSurveillance\bin\Debug\WorkerSurveillance.exe.config
+C:\Users\Alex\Desktop\WorkerSurveillance\WorkerSurveillance\obj\Debug\WorkerSurveillance.exe
+C:\Users\Alex\Desktop\WorkerSurveillance\WorkerSurveillance\obj\Debug\WorkerSurveillance.pdb
+C:\Users\Alex\Desktop\WorkerSurveillance\WorkerSurveillance\bin\Debug\WorkerSurveillance.exe
+C:\Users\Alex\Desktop\WorkerSurveillance\WorkerSurveillance\bin\Debug\WorkerSurveillance.pdb
+C:\Users\Alex\Desktop\WorkerSurveillance\WorkerSurveillance\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Alex\Desktop\WorkerSurveillance\WorkerSurveillance\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Alex\Desktop\WorkerSurveillance\WorkerSurveillance\bin\Debug\System.Data.SQLite.xml
+C:\Users\Alex\Desktop\WorkerSurveillance\WorkerSurveillance\obj\Debug\WorkerSurveillance.csprojResolveAssemblyReference.cache
+C:\Users\Alex\Desktop\WorkerSurveillance\WorkerSurveillance\obj\Debug\WorkerSurveillance.Forms.Message.resources
+C:\Users\Alex\Desktop\WorkerSurveillance\WorkerSurveillance\obj\Debug\WorkerSurveillance.csproj.GenerateResource.Cache
+C:\Users\Iancu\Desktop\C#\SVN\WorkerSurveillance\WorkerSurveillance\obj\Debug\WorkerSurveillance.Forms.Message.resources
+C:\Users\Iancu\Desktop\C#\SVN\WorkerSurveillance\WorkerSurveillance\obj\Debug\WorkerSurveillance.csproj.GenerateResource.Cache
+C:\Users\Iancu\Desktop\SVN\WorkerSurveillance\WorkerSurveillance\bin\Debug\WorkerSurveillance.exe.config
+C:\Users\Iancu\Desktop\SVN\WorkerSurveillance\WorkerSurveillance\obj\Debug\WorkerSurveillance.exe
+C:\Users\Iancu\Desktop\SVN\WorkerSurveillance\WorkerSurveillance\obj\Debug\WorkerSurveillance.pdb
+C:\Users\Iancu\Desktop\SVN\WorkerSurveillance\WorkerSurveillance\bin\Debug\WorkerSurveillance.exe
+C:\Users\Iancu\Desktop\SVN\WorkerSurveillance\WorkerSurveillance\bin\Debug\WorkerSurveillance.pdb
+C:\Users\Iancu\Desktop\SVN\WorkerSurveillance\WorkerSurveillance\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Iancu\Desktop\SVN\WorkerSurveillance\WorkerSurveillance\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Iancu\Desktop\SVN\WorkerSurveillance\WorkerSurveillance\bin\Debug\System.Data.SQLite.xml
+C:\Users\Iancu\Desktop\SVN\WorkerSurveillance\WorkerSurveillance\obj\Debug\WorkerSurveillance.csprojResolveAssemblyReference.cache
+C:\Users\Iancu\Desktop\SVN\WorkerSurveillance\WorkerSurveillance\obj\Debug\WorkerSurveillance.Forms.Message.resources
+C:\Users\Iancu\Desktop\SVN\WorkerSurveillance\WorkerSurveillance\obj\Debug\WorkerSurveillance.csproj.GenerateResource.Cache
+E:\C# projects\svn\WorkerSurveillance\WorkerSurveillance\bin\Debug\WorkerSurveillance.exe.config
+E:\C# projects\svn\WorkerSurveillance\WorkerSurveillance\obj\Debug\WorkerSurveillance.exe
+E:\C# projects\svn\WorkerSurveillance\WorkerSurveillance\obj\Debug\WorkerSurveillance.pdb
+E:\C# projects\svn\WorkerSurveillance\WorkerSurveillance\bin\Debug\WorkerSurveillance.exe
+E:\C# projects\svn\WorkerSurveillance\WorkerSurveillance\bin\Debug\WorkerSurveillance.pdb
+E:\C# projects\svn\WorkerSurveillance\WorkerSurveillance\bin\Debug\Newtonsoft.Json.dll
+E:\C# projects\svn\WorkerSurveillance\WorkerSurveillance\bin\Debug\Newtonsoft.Json.xml
+E:\C# projects\svn\WorkerSurveillance\WorkerSurveillance\bin\Debug\System.Data.SQLite.xml
+E:\C# projects\svn\WorkerSurveillance\WorkerSurveillance\obj\Debug\WorkerSurveillance.csprojResolveAssemblyReference.cache
+E:\C# projects\svn\WorkerSurveillance\WorkerSurveillance\obj\Debug\WorkerSurveillance.Forms.Message.resources
+E:\C# projects\svn\WorkerSurveillance\WorkerSurveillance\obj\Debug\WorkerSurveillance.csproj.GenerateResource.Cache
+E:\C# projects\svn - Copy\WorkerSurveillance\WorkerSurveillance\bin\Debug\SnS.exe.config
+E:\C# projects\svn - Copy\WorkerSurveillance\WorkerSurveillance\bin\Debug\SnS.exe
+E:\C# projects\svn - Copy\WorkerSurveillance\WorkerSurveillance\bin\Debug\SnS.pdb
+E:\C# projects\svn - Copy\WorkerSurveillance\WorkerSurveillance\bin\Debug\Newtonsoft.Json.dll
+E:\C# projects\svn - Copy\WorkerSurveillance\WorkerSurveillance\bin\Debug\Newtonsoft.Json.xml
+E:\C# projects\svn - Copy\WorkerSurveillance\WorkerSurveillance\bin\Debug\System.Data.SQLite.xml
+E:\C# projects\svn - Copy\WorkerSurveillance\WorkerSurveillance\obj\Debug\WorkerSurveillance.csprojResolveAssemblyReference.cache
+E:\C# projects\svn - Copy\WorkerSurveillance\WorkerSurveillance\obj\Debug\WorkerSurveillance.Forms.Message.resources
+E:\C# projects\svn - Copy\WorkerSurveillance\WorkerSurveillance\obj\Debug\WorkerSurveillance.csproj.GenerateResource.Cache
+E:\C# projects\svn - Copy\WorkerSurveillance\WorkerSurveillance\obj\Debug\SnS.exe
+E:\C# projects\svn - Copy\WorkerSurveillance\WorkerSurveillance\obj\Debug\SnS.pdb
