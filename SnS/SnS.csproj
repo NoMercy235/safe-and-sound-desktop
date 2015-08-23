@@ -73,13 +73,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Requests\MessagesRequest.cs" />
+    <Compile Include="Classes\Requests\SocialRequests.cs" />
     <Compile Include="Classes\Unused\AlertController.cs" />
     <Compile Include="Classes\EmailSender.cs" />
     <Compile Include="Classes\Requests\ApplicationsRequest.cs" />
     <Compile Include="Classes\Requests\SettingsRequest.cs" />
     <Compile Include="Classes\Requests\ShutdownRequest.cs" />
     <Compile Include="Classes\Requests\UploadRequest.cs" />
-    <Compile Include="Classes\UserController\Application.cs" />
+    <Compile Include="Classes\UserController\Objects\Contact.cs" />
+    <Compile Include="Classes\UserController\Objects\Application.cs" />
     <Compile Include="Classes\UserController\FileController.cs" />
     <Compile Include="Classes\Internet\FireFox.cs" />
     <Compile Include="Classes\Internet\GoogleChrome.cs" />
@@ -93,10 +95,15 @@
     <Compile Include="Classes\UserController\settingsFile.cs" />
     <Compile Include="Classes\Internet\urlhist.cs" />
     <Compile Include="Classes\Internet\UrlHistoryWrapper.cs" />
-    <Compile Include="Classes\Social.cs" />
     <Compile Include="Classes\UserController\UsbHandler.cs" />
-    <Compile Include="Classes\UserController\User.cs" />
+    <Compile Include="Classes\UserController\Objects\User.cs" />
     <Compile Include="Classes\Unused\Win32api.cs" />
+    <Compile Include="Forms\AddFriendForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddFriendForm.Designer.cs">
+      <DependentUpon>AddFriendForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\MessageForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,7 +116,7 @@
     <Compile Include="Forms\UserForm.Designer.cs">
       <DependentUpon>UserForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Functions\AES.cs" />
+    <Compile Include="Functions\Encryption\AES.cs" />
     <Compile Include="Functions\AutoClosingMessageBox.cs" />
     <Compile Include="Functions\GlobalVariables.cs" />
     <Compile Include="Functions\KeepAlive.cs" />
@@ -125,6 +132,9 @@
     <Content Include="Classes\Internet\UrlHistoryLibrary.csproj" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Forms\AddFriendForm.resx">
+      <DependentUpon>AddFriendForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\MessageForm.resx">
       <DependentUpon>MessageForm.cs</DependentUpon>
     </EmbeddedResource>

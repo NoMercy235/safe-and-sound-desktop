@@ -30,11 +30,12 @@
         {
             this.menuControl = new System.Windows.Forms.TabControl();
             this.chatPage = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.sendButton = new System.Windows.Forms.Button();
-            this.messageBox = new System.Windows.Forms.TextBox();
+            this.contactsList = new System.Windows.Forms.Panel();
             this.chatBox = new System.Windows.Forms.Panel();
+            this.messageBox = new System.Windows.Forms.TextBox();
+            this.sendButton = new System.Windows.Forms.Button();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.buttAddFriend = new System.Windows.Forms.Button();
             this.menuControl.SuspendLayout();
             this.chatPage.SuspendLayout();
             this.SuspendLayout();
@@ -51,10 +52,11 @@
             // 
             // chatPage
             // 
+            this.chatPage.Controls.Add(this.buttAddFriend);
+            this.chatPage.Controls.Add(this.contactsList);
             this.chatPage.Controls.Add(this.chatBox);
             this.chatPage.Controls.Add(this.messageBox);
             this.chatPage.Controls.Add(this.sendButton);
-            this.chatPage.Controls.Add(this.listBox1);
             this.chatPage.Location = new System.Drawing.Point(4, 22);
             this.chatPage.Name = "chatPage";
             this.chatPage.Padding = new System.Windows.Forms.Padding(3);
@@ -63,27 +65,27 @@
             this.chatPage.Text = "Chat";
             this.chatPage.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
+            // contactsList
             // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(192, 74);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.contactsList.Location = new System.Drawing.Point(320, 20);
+            this.contactsList.Name = "contactsList";
+            this.contactsList.Size = new System.Drawing.Size(252, 420);
+            this.contactsList.TabIndex = 5;
             // 
-            // listBox1
+            // chatBox
             // 
-            this.listBox1.BackColor = System.Drawing.Color.CadetBlue;
-            this.listBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 20;
-            this.listBox1.Location = new System.Drawing.Point(319, 20);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(250, 500);
-            this.listBox1.TabIndex = 0;
+            this.chatBox.Location = new System.Drawing.Point(9, 20);
+            this.chatBox.Name = "chatBox";
+            this.chatBox.Size = new System.Drawing.Size(304, 420);
+            this.chatBox.TabIndex = 4;
+            // 
+            // messageBox
+            // 
+            this.messageBox.Location = new System.Drawing.Point(9, 457);
+            this.messageBox.Multiline = true;
+            this.messageBox.Name = "messageBox";
+            this.messageBox.Size = new System.Drawing.Size(209, 63);
+            this.messageBox.TabIndex = 3;
             // 
             // sendButton
             // 
@@ -94,20 +96,25 @@
             this.sendButton.Text = "button1";
             this.sendButton.UseVisualStyleBackColor = true;
             // 
-            // messageBox
+            // tabPage2
             // 
-            this.messageBox.Location = new System.Drawing.Point(9, 457);
-            this.messageBox.Multiline = true;
-            this.messageBox.Name = "messageBox";
-            this.messageBox.Size = new System.Drawing.Size(209, 63);
-            this.messageBox.TabIndex = 3;
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(578, 537);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // chatBox
+            // buttAddFriend
             // 
-            this.chatBox.Location = new System.Drawing.Point(9, 20);
-            this.chatBox.Name = "chatBox";
-            this.chatBox.Size = new System.Drawing.Size(304, 431);
-            this.chatBox.TabIndex = 4;
+            this.buttAddFriend.Location = new System.Drawing.Point(320, 457);
+            this.buttAddFriend.Name = "buttAddFriend";
+            this.buttAddFriend.Size = new System.Drawing.Size(249, 63);
+            this.buttAddFriend.TabIndex = 6;
+            this.buttAddFriend.Text = "button1";
+            this.buttAddFriend.UseVisualStyleBackColor = true;
+            this.buttAddFriend.Click += new System.EventHandler(this.buttAddFriend_Click);
             // 
             // UserForm
             // 
@@ -132,11 +139,12 @@
 
         private System.Windows.Forms.TabControl menuControl;
         private System.Windows.Forms.TabPage chatPage;
-        private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Panel chatBox;
         private System.Windows.Forms.TextBox messageBox;
         private System.Windows.Forms.Button sendButton;
+        private System.Windows.Forms.Panel contactsList;
+        private System.Windows.Forms.Button buttAddFriend;
 
     }
 }

@@ -1,4 +1,6 @@
 ﻿using SnS.Classes;
+using SnS.Classes.UserController;
+using SnS.Forms;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +13,8 @@ namespace SnS.Functions
     {
         public static string ENDPOINT = "http://localhost/Cyclopv2/public/api/";
         public static User user = new User();
+        public static LinkedList<Contact> contacts = new LinkedList<Contact>();
+        public static UserForm userPanel;
 
         private static string szDeviceName;
         private static bool bIsAdmin;

@@ -8,6 +8,7 @@ namespace SnS.Classes
 {
     class User
     {
+        public int id { get; set; }
         public int allow_history { get; set; }
         public int allow_logger { get; set; }
         public int allow_usb { get; set; }

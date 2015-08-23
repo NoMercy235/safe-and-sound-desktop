@@ -22,7 +22,7 @@ namespace SnS.Classes.Requests
                 string[] fileEntries = Directory.GetFiles(GlobalVariables.rootFolder);
 
                 string url = ENDPOINT + "uploadData?data=" + szData + "&type=" + szType + "&table=" + szTable
-                    + "&deviceName=" + GlobalVariables.getDeviceName() ;
+                    + "&clientId=" + GlobalVariables.user.id ;
 
                 WebRequest request = (WebRequest)WebRequest.Create(url);
 

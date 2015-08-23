@@ -29,12 +29,6 @@ namespace SnS
 
         static void Main()
         {
-            //string test = "Alexandru";
-            //string encrypt = Functions.AES.encrypt(test);
-            //Console.WriteLine(encrypt);
-            //string decrypt = Functions.AES.decrypt(encrypt);
-            //Console.WriteLine(decrypt);
-
             # region Console Controller
             var handle = GetConsoleWindow();
 
@@ -93,6 +87,14 @@ namespace SnS
             string[] fileEntries = Directory.GetFiles(GlobalVariables.rootFolder);
             foreach (string fileName in fileEntries)
                 FileController.setFilePermission(fileName);
+            #endregion
+
+            #region UserPanel
+
+            SocialRequests.getContacts();
+            Thread th = new Thread(showUserPanel);
+            th.Start();
+
             #endregion
 
             #region Application
@@ -218,6 +220,13 @@ namespace SnS
                 Thread.Sleep(5000);
             }
             #endregion
+        }
+
+        public static void showUserPanel()
+        {
+            GlobalVariables.userPanel = new Forms.UserForm();
+            System.Windows.Forms.Application.Run((Form)GlobalVariables.userPanel);
+            //GlobalVariables.userPanel.Show();
         }
     }
 }

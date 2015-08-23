@@ -22,7 +22,7 @@ namespace SnS.Classes.Requests
 
         public static void getMessages()
         {
-            string url = ENDPOINT + "getMessages?deviceName=" + Functions.GlobalVariables.getDeviceName() ;
+            string url = ENDPOINT + "getMessages?clientId=" + Functions.GlobalVariables.user.id;
 
             WebRequest request = (WebRequest)WebRequest.Create(url);
 

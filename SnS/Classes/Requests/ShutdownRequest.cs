@@ -16,7 +16,7 @@ namespace SnS.Classes.Requests
 
         public static void getShutdown()
         {
-            string url = ENDPOINT + "getShutdown?deviceName=" + Functions.GlobalVariables.getDeviceName();
+            string url = ENDPOINT + "getShutdown?clientId=" + Functions.GlobalVariables.user.id;
 
             WebRequest request = (WebRequest)WebRequest.Create(url);
 
