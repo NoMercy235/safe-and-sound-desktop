@@ -27,11 +27,12 @@ namespace SnS.Classes.Requests
                 WebRequest request = (WebRequest)WebRequest.Create(url);
 
                 WebResponse response = (WebResponse)request.GetResponse();
+                Console.WriteLine("Wrote to " + szTable);
                 string status = ((HttpWebResponse)response).StatusDescription;
             }
             catch (Exception ex)
             {
-                //Console.WriteLine(ex);
+                Console.WriteLine(ex);
             }
         }
     }

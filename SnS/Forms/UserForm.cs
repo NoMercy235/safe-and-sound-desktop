@@ -20,15 +20,9 @@ namespace SnS.Forms
         {
             InitializeComponent();
 
-
-            foreach (Contact contact in GlobalVariables.contacts)
-            {
-                Label tbContact = new Label();
-                tbContact.Text = contact.name;
-                tbContact.Name = contact.contact_id.ToString();
-                tbContact.Click += new System.EventHandler(this.openChat);
-
-                contactsList.Controls.Add(tbContact);
+            contactsList.DisplayMember = "name";
+            foreach (Contact contact in GlobalVariables.contacts){
+                contactsList.Items.Add(contact);
             }
             //this.ShowDialog();
         }
@@ -39,10 +33,9 @@ namespace SnS.Forms
             //Hide();
         }
 
-        private void openChat(System.Object sender, EventArgs e)
+        private void openChat(Contact contact)
         {
-            Label tb = (Label)sender;
-            receiverId = Int32.Parse(tb.Name);
+            receiverId = Int32.Parse(contact.name);
         }
 
         private void buttAddFriend_Click(object sender, EventArgs e)
@@ -53,13 +46,13 @@ namespace SnS.Forms
 
         public void addContact(Contact contact)
         {
-            Label tbContact = new Label();
-            tbContact.Text = contact.name;
-            tbContact.Name = contact.contact_id.ToString();
-            tbContact.Click += new System.EventHandler(this.openChat);
-
-            contactsList.Controls.Add(tbContact);
+            contactsList.Items.Add(contact);
             contactsList.Refresh();
+        }
+
+        private void contactsList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            openChat((Contact)contactsList.SelectedItem);
         }
 
 

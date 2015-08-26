@@ -30,12 +30,12 @@
         {
             this.menuControl = new System.Windows.Forms.TabControl();
             this.chatPage = new System.Windows.Forms.TabPage();
-            this.contactsList = new System.Windows.Forms.Panel();
+            this.buttAddFriend = new System.Windows.Forms.Button();
             this.chatBox = new System.Windows.Forms.Panel();
             this.messageBox = new System.Windows.Forms.TextBox();
             this.sendButton = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.buttAddFriend = new System.Windows.Forms.Button();
+            this.contactsList = new System.Windows.Forms.ListBox();
             this.menuControl.SuspendLayout();
             this.chatPage.SuspendLayout();
             this.SuspendLayout();
@@ -52,8 +52,8 @@
             // 
             // chatPage
             // 
-            this.chatPage.Controls.Add(this.buttAddFriend);
             this.chatPage.Controls.Add(this.contactsList);
+            this.chatPage.Controls.Add(this.buttAddFriend);
             this.chatPage.Controls.Add(this.chatBox);
             this.chatPage.Controls.Add(this.messageBox);
             this.chatPage.Controls.Add(this.sendButton);
@@ -65,12 +65,15 @@
             this.chatPage.Text = "Chat";
             this.chatPage.UseVisualStyleBackColor = true;
             // 
-            // contactsList
+            // buttAddFriend
             // 
-            this.contactsList.Location = new System.Drawing.Point(320, 20);
-            this.contactsList.Name = "contactsList";
-            this.contactsList.Size = new System.Drawing.Size(252, 420);
-            this.contactsList.TabIndex = 5;
+            this.buttAddFriend.Location = new System.Drawing.Point(320, 457);
+            this.buttAddFriend.Name = "buttAddFriend";
+            this.buttAddFriend.Size = new System.Drawing.Size(249, 63);
+            this.buttAddFriend.TabIndex = 6;
+            this.buttAddFriend.Text = "button1";
+            this.buttAddFriend.UseVisualStyleBackColor = true;
+            this.buttAddFriend.Click += new System.EventHandler(this.buttAddFriend_Click);
             // 
             // chatBox
             // 
@@ -106,22 +109,23 @@
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // buttAddFriend
+            // contactsList
             // 
-            this.buttAddFriend.Location = new System.Drawing.Point(320, 457);
-            this.buttAddFriend.Name = "buttAddFriend";
-            this.buttAddFriend.Size = new System.Drawing.Size(249, 63);
-            this.buttAddFriend.TabIndex = 6;
-            this.buttAddFriend.Text = "button1";
-            this.buttAddFriend.UseVisualStyleBackColor = true;
-            this.buttAddFriend.Click += new System.EventHandler(this.buttAddFriend_Click);
+            this.contactsList.DisplayMember = "id";
+            this.contactsList.Location = new System.Drawing.Point(320, 20);
+            this.contactsList.MultiColumn = true;
+            this.contactsList.Name = "contactsList";
+            this.contactsList.Size = new System.Drawing.Size(249, 420);
+            this.contactsList.TabIndex = 1;
+            this.contactsList.ValueMember = "name";
+            this.contactsList.SelectedIndexChanged += new System.EventHandler(this.contactsList_SelectedIndexChanged);
             // 
             // UserForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ClientSize = new System.Drawing.Size(584, 561);
+            this.ClientSize = new System.Drawing.Size(813, 561);
             this.Controls.Add(this.menuControl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "UserForm";
@@ -143,8 +147,8 @@
         private System.Windows.Forms.Panel chatBox;
         private System.Windows.Forms.TextBox messageBox;
         private System.Windows.Forms.Button sendButton;
-        private System.Windows.Forms.Panel contactsList;
         private System.Windows.Forms.Button buttAddFriend;
+        private System.Windows.Forms.ListBox contactsList;
 
     }
 }
