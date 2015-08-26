@@ -1,4 +1,6 @@
-﻿using SnS.Classes.UserController;
+﻿using SnS.Classes.Requests;
+using SnS.Classes.UserController;
+using SnS.Classes.UserController.Objects;
 using SnS.Functions;
 using System;
 using System.Collections.Generic;
@@ -35,7 +37,10 @@ namespace SnS.Forms
 
         private void openChat(Contact contact)
         {
-            receiverId = Int32.Parse(contact.name);
+            receiverId = contact.contact_id;
+            Messages chat = SocialRequests.getMessages(receiverId);
+
+
         }
 
         private void buttAddFriend_Click(object sender, EventArgs e)

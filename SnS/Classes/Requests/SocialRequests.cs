@@ -1,4 +1,5 @@
 ﻿using SnS.Classes.UserController;
+using SnS.Classes.UserController.Objects;
 using SnS.Functions;
 using System;
 using System.Collections.Generic;
@@ -75,6 +76,35 @@ namespace SnS.Classes.Requests
                 return result;
             }
             catch(Exception ex){
+                Console.WriteLine(ex.Message);
+                return null;
+            }
+        }
+
+
+        public static Messages getMessages(int contactId)
+        {
+            try
+            {
+                string url = ENDPOINT + "social/getMessages?clientId=" + GlobalVariables.user.id + "&contactId=" + contactId;
+
+                WebRequest request = (WebRequest)WebRequest.Create(url);
+
+                WebResponse response = (WebResponse)request.GetResponse();
+                string status = ((HttpWebResponse)response).StatusDescription;
+
+                Stream resStream = response.GetResponseStream();
+
+                StreamReader reader = new StreamReader(resStream);
+
+                string responseFromServer = reader.ReadToEnd();
+
+                JavaScriptSerializer oJS = new JavaScriptSerializer();
+                Messages chat = oJS.Deserialize<Messages>(responseFromServer);
+                return chat;
+            }
+            catch (Exception ex)
+            {
                 Console.WriteLine(ex.Message);
                 return null;
             }

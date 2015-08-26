@@ -23,10 +23,14 @@ namespace SnS.Forms
         private void buttAddFriend_Click(object sender, EventArgs e)
         {
             Contact response = SocialRequests.postContact(tbFriendName.Text);
-            if (response != null)
+            if (response.message == "success" || response.message == "recovered")
             {
                 this.Close();
                 GlobalVariables.userPanel.addContact(response);
+            }
+            else
+            {
+                lblError.Text = response.message;
             }
         }
     }

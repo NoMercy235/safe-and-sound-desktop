@@ -31,6 +31,7 @@
             this.tbFriendName = new System.Windows.Forms.TextBox();
             this.buttAddFriend = new System.Windows.Forms.Button();
             this.lblName = new System.Windows.Forms.Label();
+            this.lblError = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // tbFriendName
@@ -42,7 +43,7 @@
             // 
             // buttAddFriend
             // 
-            this.buttAddFriend.Location = new System.Drawing.Point(64, 86);
+            this.buttAddFriend.Location = new System.Drawing.Point(64, 126);
             this.buttAddFriend.Name = "buttAddFriend";
             this.buttAddFriend.Size = new System.Drawing.Size(100, 23);
             this.buttAddFriend.TabIndex = 1;
@@ -59,11 +60,22 @@
             this.lblName.TabIndex = 2;
             this.lblName.Text = "Search Friend Name";
             // 
+            // lblError
+            // 
+            this.lblError.AutoSize = true;
+            this.lblError.BackColor = System.Drawing.Color.BlanchedAlmond;
+            this.lblError.ForeColor = System.Drawing.Color.Red;
+            this.lblError.Location = new System.Drawing.Point(61, 84);
+            this.lblError.Name = "lblError";
+            this.lblError.Size = new System.Drawing.Size(0, 13);
+            this.lblError.TabIndex = 3;
+            // 
             // AddFriendForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(241, 161);
+            this.Controls.Add(this.lblError);
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.buttAddFriend);
             this.Controls.Add(this.tbFriendName);
@@ -80,5 +92,6 @@
         private System.Windows.Forms.TextBox tbFriendName;
         private System.Windows.Forms.Button buttAddFriend;
         private System.Windows.Forms.Label lblName;
+        private System.Windows.Forms.Label lblError;
     }
 }

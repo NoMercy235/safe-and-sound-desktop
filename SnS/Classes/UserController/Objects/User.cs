@@ -23,8 +23,5 @@ namespace SnS.Classes
         public string token { get; set; }
 
         public string type { get; set; }
-
-
-
     }
 }

@@ -88,6 +88,8 @@
     <Compile Include="Classes\Internet\HistoryItem.cs" />
     <Compile Include="Classes\Internet\InternetExplorer.cs" />
     <Compile Include="Classes\UserController\KeyLogger.cs" />
+    <Compile Include="Classes\UserController\Objects\Chat\Message.cs" />
+    <Compile Include="Classes\UserController\Objects\Chat\Messages.cs" />
     <Compile Include="Classes\UserController\ProcessData.cs">
       <SubType>Component</SubType>
     </Compile>
