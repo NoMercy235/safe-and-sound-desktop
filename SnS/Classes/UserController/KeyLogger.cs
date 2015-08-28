@@ -26,8 +26,6 @@ namespace SnS.Classes
 
         public static void repeatAction()
         {
-            //no fair. :D mie nu mi-a mers cand am scris asta.
-            //dar nu aveam new thread :P
             while (true)
             {
                 Thread.Sleep(10);

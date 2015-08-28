@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace SnS.Classes.UserController.Objects
 {
-    public class Messages
+    public class MessageResponse
     {
-        //public Message[] messages { get; set; }
-        public List<Message> messages { get; set; }
+        public string message { get; set; }
     }
 }

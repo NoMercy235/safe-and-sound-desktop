@@ -60,6 +60,7 @@
     </Reference>
     <Reference Include="System.Drawing" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Messaging" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.ServiceModel.Web" />
     <Reference Include="System.Web.Extensions" />
@@ -72,6 +73,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\App\Objects\MessageLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Classes\Requests\MessagesRequest.cs" />
     <Compile Include="Classes\Requests\SocialRequests.cs" />
     <Compile Include="Classes\Unused\AlertController.cs" />
@@ -80,6 +84,7 @@
     <Compile Include="Classes\Requests\SettingsRequest.cs" />
     <Compile Include="Classes\Requests\ShutdownRequest.cs" />
     <Compile Include="Classes\Requests\UploadRequest.cs" />
+    <Compile Include="Classes\UserController\Objects\Chat\MessageResponse.cs" />
     <Compile Include="Classes\UserController\Objects\Contact.cs" />
     <Compile Include="Classes\UserController\Objects\Application.cs" />
     <Compile Include="Classes\UserController\FileController.cs" />
