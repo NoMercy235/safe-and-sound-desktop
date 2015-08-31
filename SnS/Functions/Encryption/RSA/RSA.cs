@@ -13,9 +13,9 @@ namespace SnS.Functions
         private static string publicKey;
         private static UnicodeEncoding _encoder = new UnicodeEncoding();
 
-        private static void generateRSAKeys()
+        public static void generateRSAKeys()
         {
-            var rsa = new RSACryptoServiceProvider();
+            RSACryptoServiceProvider rsa = new RSACryptoServiceProvider();
             privateKey = rsa.ToXmlString(true);
             publicKey = rsa.ToXmlString(false);
         }
@@ -35,10 +35,12 @@ namespace SnS.Functions
             return _encoder.GetString(decryptedByte);
         }
 
-        public static string Encrypt(string data)
+        public static string Encrypt(string data, string key)
         {
+            byte[] keyBytes = System.Convert.FromBase64String(key);
+            key = Encoding.UTF8.GetString(keyBytes);
             var rsa = new RSACryptoServiceProvider();
-            rsa.FromXmlString(publicKey);
+            rsa.FromXmlString(key);
             var dataToEncrypt = _encoder.GetBytes(data);
             var encryptedByteArray = rsa.Encrypt(dataToEncrypt, false).ToArray();
             var length = encryptedByteArray.Count();
@@ -57,7 +59,10 @@ namespace SnS.Functions
         }
 
         public static string getPublicKey(){
-            return publicKey;
+            var aux = System.Convert.ToBase64String(Encoding.UTF8.GetBytes(publicKey));
+            byte[] keyBytes = System.Convert.FromBase64String(aux);
+            //var axu2 = Encoding.UTF8.GetString(keyBytes);
+            return System.Convert.ToBase64String(Encoding.UTF8.GetBytes(publicKey));
         }
 
     }

@@ -88,7 +88,7 @@ namespace SnS
 
             #region UserPanel
 
-            SocialRequests.getContacts();
+            ContactsRequests.getContacts();
             Thread th = new Thread(showUserPanel);
             th.Start();
 

@@ -76,7 +76,11 @@
     <Compile Include="Classes\App\Objects\MessageLabel.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Classes\App\Objects\StackPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Classes\Requests\MessagesRequest.cs" />
+    <Compile Include="Classes\Requests\ContactsRequest.cs" />
     <Compile Include="Classes\Requests\SocialRequests.cs" />
     <Compile Include="Classes\Unused\AlertController.cs" />
     <Compile Include="Classes\EmailSender.cs" />

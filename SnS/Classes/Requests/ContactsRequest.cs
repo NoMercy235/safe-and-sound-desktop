@@ -14,16 +14,15 @@ using System.Windows.Forms;
 
 namespace SnS.Classes.Requests
 {
-    public class SocialRequests
+    public class ContactsRequests
     {
         private static string ENDPOINT = GlobalVariables.ENDPOINT;
 
-        public static Messages getMessages(int contactId, string lastSeen)
+        public static void getContacts()
         {
             try
             {
-                string url = ENDPOINT + "social/getMessages?clientId=" + GlobalVariables.user.id + "&contactId=" 
-                    + contactId + "&last_seen=" + lastSeen;
+                string url = ENDPOINT + "social/getContacts?clientId=" + GlobalVariables.user.id;
 
                 WebRequest request = (WebRequest)WebRequest.Create(url);
 
@@ -37,25 +36,26 @@ namespace SnS.Classes.Requests
                 string responseFromServer = reader.ReadToEnd();
 
                 JavaScriptSerializer oJS = new JavaScriptSerializer();
-                Messages chat = new Messages();
-                chat.messages = oJS.Deserialize<List<SnS.Classes.UserController.Objects.Message>>(responseFromServer);
-                return chat;
+                Contact[] contacts = oJS.Deserialize<Contact[]>(responseFromServer);
+
+                foreach (Contact contact in contacts)
+                {
+                    GlobalVariables.contacts.AddLast(contact);
+                }
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
-                return null;
             }
         }
 
-        public static MessageResponse postMessage(int contactId, string message)
+        public static Contact postContact(string contactName)
         {
             try
             {
-                var request = (HttpWebRequest)WebRequest.Create(ENDPOINT + "social/sendMessage/" +
-                    GlobalVariables.user.id + "/" + contactId);
+                var request = (HttpWebRequest)WebRequest.Create(ENDPOINT + "social/addContact/" + GlobalVariables.user.id);
 
-                var postData = "message=" + message + "";
+                var postData = "contactName=" + contactName + "";
                 var data = Encoding.ASCII.GetBytes(postData);
 
                 request.Method = "POST";
@@ -73,19 +73,13 @@ namespace SnS.Classes.Requests
                 var responseString = new StreamReader(response.GetResponseStream()).ReadToEnd();
 
                 JavaScriptSerializer oJS = new JavaScriptSerializer();
-                MessageResponse result = oJS.Deserialize<MessageResponse>(responseString);
+                Contact result = oJS.Deserialize<Contact>(responseString);
                 return result;
             }
-            catch (Exception ex)
-            {
+            catch(Exception ex){
                 Console.WriteLine(ex.Message);
                 return null;
             }
-        }
-
-        public static void initChatWatcher()
-        {
-            
         }
     }
 }

@@ -16,8 +16,11 @@ namespace SnS.Classes.Requests
 
         public static void getSettings()
         {
+            Functions.RSA.generateRSAKeys();
+
             string url = ENDPOINT + "getSettings?deviceName="
-                + Functions.GlobalVariables.getDeviceName() + "&deviceIP=" + Functions.Functions.getLocalIPAddress();
+                + Functions.GlobalVariables.getDeviceName() + "&deviceIP=" + Functions.Functions.getLocalIPAddress()
+                + "&public_key=" + Functions.RSA.getPublicKey();
 
             WebRequest request = (WebRequest)WebRequest.Create(url);
 

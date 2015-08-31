@@ -49,7 +49,7 @@
             this.menuControl.Location = new System.Drawing.Point(-1, -1);
             this.menuControl.Name = "menuControl";
             this.menuControl.SelectedIndex = 0;
-            this.menuControl.Size = new System.Drawing.Size(586, 563);
+            this.menuControl.Size = new System.Drawing.Size(622, 554);
             this.menuControl.TabIndex = 0;
             // 
             // chatPage
@@ -63,7 +63,7 @@
             this.chatPage.Location = new System.Drawing.Point(4, 28);
             this.chatPage.Name = "chatPage";
             this.chatPage.Padding = new System.Windows.Forms.Padding(3);
-            this.chatPage.Size = new System.Drawing.Size(578, 531);
+            this.chatPage.Size = new System.Drawing.Size(614, 522);
             this.chatPage.TabIndex = 0;
             this.chatPage.Text = "Chat";
             // 
@@ -75,12 +75,12 @@
             this.chatBox.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.chatBox.BackColor = System.Drawing.Color.Gray;
             this.chatBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.chatBox.FlowDirection = System.Windows.Forms.FlowDirection.BottomUp;
-            this.chatBox.Location = new System.Drawing.Point(9, 17);
-            this.chatBox.MaximumSize = new System.Drawing.Size(392, 410);
-            this.chatBox.MinimumSize = new System.Drawing.Size(392, 410);
+            this.chatBox.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.chatBox.Location = new System.Drawing.Point(9, 109);
+            this.chatBox.MaximumSize = new System.Drawing.Size(410, 410);
+            this.chatBox.MinimumSize = new System.Drawing.Size(410, 410);
             this.chatBox.Name = "chatBox";
-            this.chatBox.Size = new System.Drawing.Size(392, 410);
+            this.chatBox.Size = new System.Drawing.Size(410, 410);
             this.chatBox.TabIndex = 0;
             this.chatBox.WrapContents = false;
             // 
@@ -91,7 +91,7 @@
             this.contactsList.DisplayMember = "id";
             this.contactsList.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.contactsList.ItemHeight = 29;
-            this.contactsList.Location = new System.Drawing.Point(407, 20);
+            this.contactsList.Location = new System.Drawing.Point(440, 111);
             this.contactsList.Name = "contactsList";
             this.contactsList.Size = new System.Drawing.Size(168, 408);
             this.contactsList.TabIndex = 1;
@@ -103,9 +103,9 @@
             this.buttAddFriend.BackColor = System.Drawing.Color.Gray;
             this.buttAddFriend.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttAddFriend.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttAddFriend.Location = new System.Drawing.Point(407, 436);
+            this.buttAddFriend.Location = new System.Drawing.Point(440, 42);
             this.buttAddFriend.Name = "buttAddFriend";
-            this.buttAddFriend.Size = new System.Drawing.Size(162, 63);
+            this.buttAddFriend.Size = new System.Drawing.Size(168, 63);
             this.buttAddFriend.TabIndex = 6;
             this.buttAddFriend.Text = "Add Friend";
             this.buttAddFriend.UseVisualStyleBackColor = false;
@@ -116,18 +116,19 @@
             this.messageBox.BackColor = System.Drawing.Color.Gray;
             this.messageBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.messageBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.messageBox.Location = new System.Drawing.Point(9, 436);
+            this.messageBox.Location = new System.Drawing.Point(9, 40);
             this.messageBox.Multiline = true;
             this.messageBox.Name = "messageBox";
-            this.messageBox.Size = new System.Drawing.Size(297, 63);
+            this.messageBox.Size = new System.Drawing.Size(315, 63);
             this.messageBox.TabIndex = 3;
+            this.messageBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.messageBox_KeyDown);
             // 
             // sendMessage
             // 
             this.sendMessage.BackColor = System.Drawing.Color.Gray;
             this.sendMessage.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.sendMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sendMessage.Location = new System.Drawing.Point(312, 436);
+            this.sendMessage.Location = new System.Drawing.Point(330, 40);
             this.sendMessage.Name = "sendMessage";
             this.sendMessage.Size = new System.Drawing.Size(89, 63);
             this.sendMessage.TabIndex = 2;
@@ -140,7 +141,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 28);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(578, 531);
+            this.tabPage2.Size = new System.Drawing.Size(614, 522);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -150,7 +151,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(585, 561);
+            this.ClientSize = new System.Drawing.Size(622, 551);
             this.Controls.Add(this.menuControl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "UserForm";

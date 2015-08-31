@@ -18,47 +18,52 @@ namespace SnS.Forms
 {
     public partial class UserForm : Form
     {
-        private static Thread chatThread = new Thread(getChat);
-        private static  int receiverId = 0;
+        private static UserForm self;
+        private static System.Windows.Forms.Timer chatTimer = new System.Windows.Forms.Timer();
+        private static Contact receiver = null;
+        private static string lastSeen = "false";
         private static List<SnS.Classes.UserController.Objects.Message> allMessages = new List<SnS.Classes.UserController.Objects.Message>();
 
         public UserForm()
         {
             InitializeComponent();
+            chatTimer.Interval = 2000;
+            chatTimer.Tick += new EventHandler(openChat);
 
             contactsList.DisplayMember = "name";
             string[] aux = new string[2];
             foreach (Contact contact in GlobalVariables.contacts){
                 contactsList.Items.Add(contact);
             }
-            //this.ShowDialog();
+            self = this;
         }
 
         private void UserForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             e.Cancel = true;                         
-            //Hide();
         }
 
-        private void openChat(Contact contact)
+        private static void onContactSelect(Contact contact)
         {
-            receiverId = contact.contact_id;
-            Messages chat = SocialRequests.getMessages(receiverId);
-            allMessages = allMessages.Union(chat.messages).ToList();
-
-            foreach (SnS.Classes.UserController.Objects.Message message in allMessages)
-            {
-                addMessage(message.message);
-            }
-            chatThread.Start();
+            receiver = contact;
+            lastSeen = "false";
+            self.chatBox.Controls.Clear();
+            openChat(null, null);
+            chatTimer.Start();
         }
 
-        private static void getChat()
+        private static void openChat(object sender, EventArgs e)
         {
-            while (true)
-            {
+            Messages chat = SocialRequests.getMessages(receiver.contact_id, lastSeen);
+            chat.messages.Reverse();
+            if (lastSeen == "false") lastSeen = "true";
 
-                Thread.Sleep(2000);
+            foreach (SnS.Classes.UserController.Objects.Message message in chat.messages)
+            {
+                if (message.sender_id == receiver.contact_id)
+                    self.addMessage(message.message, false);
+                else
+                    self.addMessage(message.message, true);
             }
         }
 
@@ -76,41 +81,59 @@ namespace SnS.Forms
 
         private void contactsList_SelectedIndexChanged(object sender, EventArgs e)
         {
-            openChat((Contact)contactsList.SelectedItem);
+            onContactSelect((Contact)contactsList.SelectedItem);
         }
 
         private void sendMessage_Click(object sender, EventArgs e)
         {
-            if (receiverId != 0)
+            if (receiver.contact_id != 0)
             {
                 if (messageBox.Text.Length > 0)
                 {
-                    if (SocialRequests.postMessage(receiverId, messageBox.Text).message == "success")
+                    messageBox.Text = messageBox.Text.Replace("\n", "");
+                    if (SocialRequests.postMessage(receiver.contact_id,
+                        Functions.RSA.Encrypt(messageBox.Text, receiver.public_key)).message == "success")
                     {
-                        addMessage(messageBox.Text);
+                        addMessage(messageBox.Text, true);
+                        messageBox.Text = "";
                     }
-                    messageBox.Text = "";
-
                 }
                 else
                 {
                     //no messege to send
+                    MessageBox.Show("Please write a message before sending!");
                 }
             }
             else
             {
                 //no contact selected
+                MessageBox.Show("Please select a contact to chat with!");
+            }
+
+        }
+
+        private void addMessage(string message, bool sent)
+        {
+            message = Functions.RSA.Decrypt(message);
+            Color color = sent == true ? Color.FromArgb(153, 102, 153) : Color.FromArgb(0, 153, 0);
+
+            MessageLabel messagelabel = MessageLabel.create(message, chatBox, color);
+            self.chatBox.Controls.Add(messagelabel);
+            if (self.chatBox.Controls.Count > 25)
+            {
+                self.chatBox.Controls.RemoveAt(0);
+            }
+            self.chatBox.VerticalScroll.Value = chatBox.VerticalScroll.Maximum;
+            self.chatBox.PerformLayout();
+        }
+
+        private void messageBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                sendMessage_Click(null, null);
             }
         }
-
-        private void addMessage(string message)
-        {
-            MessageLabel messagelabel = MessageLabel.create(message, chatBox, Color.FromArgb(153, 102, 153));
-            chatBox.Controls.Add(messagelabel);
-            chatBox.VerticalScroll.Value = chatBox.VerticalScroll.Maximum;
-            chatBox.PerformLayout();
-        }
-
 
     }
 }

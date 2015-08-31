@@ -20,7 +20,7 @@ namespace SnS.Classes
         public string name { get; set; }
         public string ip { get; set; }
         public string last_update { get; set; }
-        public string token { get; set; }
+        public string public_key { get; set; }
 
         public string type { get; set; }
     }

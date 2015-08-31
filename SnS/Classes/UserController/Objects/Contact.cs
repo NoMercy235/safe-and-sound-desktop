@@ -12,5 +12,6 @@ namespace SnS.Classes.UserController
         public int client_id { get; set; }
         public string name { get; set; }
         public string message { get; set; }
+        public string public_key { get; set; }
     }
 }
