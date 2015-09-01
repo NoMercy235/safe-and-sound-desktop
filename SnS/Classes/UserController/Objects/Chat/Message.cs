@@ -11,6 +11,7 @@ namespace SnS.Classes.UserController.Objects
         public int id { get; set; }
         public int sender_id { get; set; }
         public int receiver_id { get; set; }
+        public int sent { get; set; }
         public string message { get; set; }
     }
 }

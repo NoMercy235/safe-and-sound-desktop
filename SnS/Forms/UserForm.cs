@@ -29,10 +29,10 @@ namespace SnS.Forms
             InitializeComponent();
             chatTimer.Interval = 2000;
             chatTimer.Tick += new EventHandler(openChat);
-
             contactsList.DisplayMember = "name";
-            string[] aux = new string[2];
+
             foreach (Contact contact in GlobalVariables.contacts){
+                contact.public_key = contact.public_key.Replace(" ", "+");
                 contactsList.Items.Add(contact);
             }
             self = this;
@@ -60,7 +60,8 @@ namespace SnS.Forms
 
             foreach (SnS.Classes.UserController.Objects.Message message in chat.messages)
             {
-                if (message.sender_id == receiver.contact_id)
+                message.message = Functions.RSA.Decrypt(message.message);
+                if (message.sent == 0)
                     self.addMessage(message.message, false);
                 else
                     self.addMessage(message.message, true);
@@ -114,7 +115,6 @@ namespace SnS.Forms
 
         private void addMessage(string message, bool sent)
         {
-            message = Functions.RSA.Decrypt(message);
             Color color = sent == true ? Color.FromArgb(153, 102, 153) : Color.FromArgb(0, 153, 0);
 
             MessageLabel messagelabel = MessageLabel.create(message, chatBox, color);

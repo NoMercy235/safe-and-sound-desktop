@@ -18,6 +18,7 @@ namespace SnS.Functions
             RSACryptoServiceProvider rsa = new RSACryptoServiceProvider();
             privateKey = rsa.ToXmlString(true);
             publicKey = rsa.ToXmlString(false);
+            GlobalVariables.user.public_key = publicKey;
         }
 
         public static string Decrypt(string data)
@@ -59,10 +60,22 @@ namespace SnS.Functions
         }
 
         public static string getPublicKey(){
-            var aux = System.Convert.ToBase64String(Encoding.UTF8.GetBytes(publicKey));
-            byte[] keyBytes = System.Convert.FromBase64String(aux);
+            //var aux = System.Convert.ToBase64String(Encoding.UTF8.GetBytes(publicKey));
+            //byte[] keyBytes = System.Convert.FromBase64String(aux);
             //var axu2 = Encoding.UTF8.GetString(keyBytes);
             return System.Convert.ToBase64String(Encoding.UTF8.GetBytes(publicKey));
+        }
+
+        public static string getPrivateKey()
+        {
+            return System.Convert.ToBase64String(Encoding.UTF8.GetBytes(privateKey));
+        }
+
+        public static void setPrivateKey(string key)
+        {
+            byte[] keyBytes = System.Convert.FromBase64String(key);
+            key = Encoding.UTF8.GetString(keyBytes);
+            privateKey = key;
         }
 
     }

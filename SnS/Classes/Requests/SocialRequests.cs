@@ -82,10 +82,5 @@ namespace SnS.Classes.Requests
                 return null;
             }
         }
-
-        public static void initChatWatcher()
-        {
-            
-        }
     }
 }

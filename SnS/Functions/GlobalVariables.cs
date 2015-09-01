@@ -15,12 +15,14 @@ namespace SnS.Functions
         public static User user = new User();
         public static LinkedList<Contact> contacts = new LinkedList<Contact>();
         public static UserForm userPanel;
+        public static LoginForm loginForm;
 
         private static string szDeviceName;
         private static bool bIsAdmin;
         public static string rootFolder;
 
         private static bool bHasCheckedPrivileges = false;
+        public static bool bIsLoggedIn = false;
 
 
 #region Setters and getters

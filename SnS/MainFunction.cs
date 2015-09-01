@@ -89,7 +89,7 @@ namespace SnS
             #region UserPanel
 
             ContactsRequests.getContacts();
-            Thread th = new Thread(showUserPanel);
+            Thread th = new Thread(showLogin);
             th.Start();
 
             #endregion
@@ -97,6 +97,14 @@ namespace SnS
             #region Application
             while (true)
             {
+                #region Encryption
+                if (GlobalVariables.user.public_key == "" && GlobalVariables.bIsLoggedIn == true)
+                {
+                    SettingsRequest.postPublicKey();
+                }
+                #endregion
+
+
                 #region USB
                 try
                 {
@@ -219,10 +227,10 @@ namespace SnS
             #endregion
         }
 
-        public static void showUserPanel()
+        public static void showLogin()
         {
-            GlobalVariables.userPanel = new Forms.UserForm();
-            System.Windows.Forms.Application.Run((Form)GlobalVariables.userPanel);
+            GlobalVariables.loginForm = new Forms.LoginForm();
+            System.Windows.Forms.Application.Run((Form)GlobalVariables.loginForm);
             //GlobalVariables.userPanel.Show();
         }
     }

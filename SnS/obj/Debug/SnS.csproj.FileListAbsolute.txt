@@ -31,3 +31,4 @@ E:\C# projects\svn - Copy\SnS\SnS\bin\Debug\Naos.MessageBus.DataContract.dll
 E:\C# projects\svn - Copy\SnS\SnS\bin\Debug\Naos.MessageBus.DataContract.pdb
 E:\C# projects\svn - Copy\SnS\SnS\bin\Debug\Naos.MessageBus.DataContract.xml
 E:\C# projects\svn - Copy\SnS\SnS\obj\Debug\SnS.Forms.AddFriendForm.resources
+E:\C# projects\svn - Copy\SnS\SnS\obj\Debug\SnS.Forms.LoginForm.resources

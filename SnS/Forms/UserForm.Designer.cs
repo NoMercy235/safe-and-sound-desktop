@@ -35,7 +35,6 @@
             this.buttAddFriend = new System.Windows.Forms.Button();
             this.messageBox = new System.Windows.Forms.TextBox();
             this.sendMessage = new System.Windows.Forms.Button();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.menuControl.SuspendLayout();
             this.chatPage.SuspendLayout();
             this.SuspendLayout();
@@ -44,7 +43,6 @@
             // 
             this.menuControl.Appearance = System.Windows.Forms.TabAppearance.Buttons;
             this.menuControl.Controls.Add(this.chatPage);
-            this.menuControl.Controls.Add(this.tabPage2);
             this.menuControl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuControl.Location = new System.Drawing.Point(-1, -1);
             this.menuControl.Name = "menuControl";
@@ -55,6 +53,7 @@
             // chatPage
             // 
             this.chatPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.chatPage.CausesValidation = false;
             this.chatPage.Controls.Add(this.chatBox);
             this.chatPage.Controls.Add(this.contactsList);
             this.chatPage.Controls.Add(this.buttAddFriend);
@@ -136,16 +135,6 @@
             this.sendMessage.UseVisualStyleBackColor = false;
             this.sendMessage.Click += new System.EventHandler(this.sendMessage_Click);
             // 
-            // tabPage2
-            // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 28);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(614, 522);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
             // UserForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -169,7 +158,6 @@
 
         private System.Windows.Forms.TabControl menuControl;
         private System.Windows.Forms.TabPage chatPage;
-        private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TextBox messageBox;
         private System.Windows.Forms.Button sendMessage;
         private System.Windows.Forms.Button buttAddFriend;
