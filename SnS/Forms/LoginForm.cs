@@ -47,11 +47,17 @@ namespace SnS.Forms
                 {
                     Functions.RSA.setPrivateKey(RegistryData.getRegistryPrivateKey());
                 }
+                this.Hide();
             }
             else
             {
                 lblError.Text = result.message;
             }
+        }
+
+        private void LoginForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            e.Cancel = true;                         
         }
     }
 }

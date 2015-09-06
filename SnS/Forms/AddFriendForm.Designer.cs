@@ -36,16 +36,17 @@
             // 
             // tbFriendName
             // 
-            this.tbFriendName.Location = new System.Drawing.Point(64, 41);
+            this.tbFriendName.Location = new System.Drawing.Point(73, 50);
             this.tbFriendName.Name = "tbFriendName";
             this.tbFriendName.Size = new System.Drawing.Size(100, 20);
             this.tbFriendName.TabIndex = 0;
             // 
             // buttAddFriend
             // 
-            this.buttAddFriend.Location = new System.Drawing.Point(64, 126);
+            this.buttAddFriend.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttAddFriend.Location = new System.Drawing.Point(53, 121);
             this.buttAddFriend.Name = "buttAddFriend";
-            this.buttAddFriend.Size = new System.Drawing.Size(100, 23);
+            this.buttAddFriend.Size = new System.Drawing.Size(140, 28);
             this.buttAddFriend.TabIndex = 1;
             this.buttAddFriend.Text = "Add Friend";
             this.buttAddFriend.UseVisualStyleBackColor = true;
@@ -54,26 +55,30 @@
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(61, 9);
+            this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.lblName.Location = new System.Drawing.Point(31, 18);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(104, 13);
+            this.lblName.Size = new System.Drawing.Size(173, 20);
             this.lblName.TabIndex = 2;
             this.lblName.Text = "Search Friend Name";
             // 
             // lblError
             // 
             this.lblError.AutoSize = true;
-            this.lblError.BackColor = System.Drawing.Color.BlanchedAlmond;
+            this.lblError.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblError.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblError.ForeColor = System.Drawing.Color.Red;
             this.lblError.Location = new System.Drawing.Point(61, 84);
             this.lblError.Name = "lblError";
-            this.lblError.Size = new System.Drawing.Size(0, 13);
+            this.lblError.Size = new System.Drawing.Size(0, 20);
             this.lblError.TabIndex = 3;
             // 
             // AddFriendForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(241, 161);
             this.Controls.Add(this.lblError);
             this.Controls.Add(this.lblName);

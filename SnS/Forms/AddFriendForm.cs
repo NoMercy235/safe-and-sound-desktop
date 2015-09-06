@@ -25,8 +25,9 @@ namespace SnS.Forms
             Contact response = ContactsRequests.postContact(tbFriendName.Text);
             if (response.message == "success" || response.message == "recovered")
             {
-                this.Close();
+                response.public_key = response.public_key.Replace(" ", "+");
                 GlobalVariables.userPanel.addContact(response);
+                this.Close();
             }
             else
             {
